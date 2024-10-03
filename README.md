@@ -57,7 +57,20 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 
 ## Data Structures
 
-TODO
+<table>
+    <tr>
+        <th>Data Structure</th>
+        <th>Header</th>
+        <th>Implementation</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Linked List</td>
+        <td><a href="./include/linked-list.h">include/linked-list.h</a></td>
+        <td><a href="./src/linked-list.tpp">src/linked-list.tpp</a></td>
+        <td><a href="./examples/linked-list.cpp">examples/linked-list.cpp</a></td>
+    </tr>
+</table>
 
 ## Algorithms
 

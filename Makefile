@@ -3,7 +3,7 @@ OUT_DIR = ./bin
 MAKE_DIR = ./make
 MAKE_EXT = mk
 LOG_FILE = ./log
-PROGRAMS = logger
+PROGRAMS = linked-list logger
 
 all: $(PROGRAMS)
 
@@ -18,5 +18,6 @@ clean:
 $(PROGRAMS): setup
 	make -f $(MAKE_DIR)/$@.$(MAKE_EXT)
 
+linked-list:
 logger:
 
