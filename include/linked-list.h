@@ -16,7 +16,6 @@ private:
 	ListNode<ListT>* head;
 	std::size_t size;
 
-	void clear() noexcept;
 
 public:
 	LinkedList();
@@ -31,6 +30,7 @@ public:
 	ListT removeFront();
 	ListT removeEnd();
 	ListT removeAt(const std::size_t& index);
+	void clear() noexcept;
 	std::size_t getSize() const noexcept;	
 	bool isEmpty() const noexcept;
 };
