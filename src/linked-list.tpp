@@ -38,7 +38,7 @@ void LinkedList<ListT>::insertEnd(const ListT value) noexcept {
 template<typename ListT>
 void LinkedList<ListT>::insertAt(const std::size_t& index, const ListT value) {
 	if (index > size)
-		throw std::out_of_range("Index out of range");
+		throw std::out_of_range("Index is greater than the size");
 	if (index == 0) {
 		insertFront(value);
 		return;
@@ -97,7 +97,7 @@ ListT LinkedList<ListT>::removeEnd() {
 template<typename ListT>
 ListT LinkedList<ListT>::removeAt(const std::size_t& index) {
 	if (index >= size)
-		throw std::out_of_range("Index out of range");
+		throw std::out_of_range("Index is greater than or equal to the size");
 	if (index == 0)
 		return removeFront();	
 	if (index == size - 1)

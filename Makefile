@@ -1,7 +1,10 @@
+# Repo config
 OBJ_DIR = ./obj
 OUT_DIR = ./bin
 MAKE_DIR = ./make
 MAKE_EXT = mk
+
+# Files
 PROGRAMS = linked-list
 
 all: $(PROGRAMS)
