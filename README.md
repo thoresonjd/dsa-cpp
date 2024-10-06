@@ -5,9 +5,10 @@ Implementing various data structures and algorithms in C++ just for fun.
 ## Repository Structure
 
 - `bin` - Contains compiled executables (excluded from repository)
-- `include` - Contains header files for the data structures and algorithms and other utilities
+- `docs` - Contains documentation for the data structures and algorithms
 - `external` - Contains external, third-party submodules
-- `make` - Contains Makefiles for the programs in `test`
+- `include` - Contains header files for the data structures and algorithms and other utilities
+- `make` - Contains Makefiles for the test programs contained in the `test` directory
 - `obj` - Contains intermediate object files (excluded from repository)
 - `src` - Contains implementation files for the data structures and algorithms and other utilities
 - `test` - Contains unit tests that demonstrate the data structures and algorithms
@@ -61,18 +62,9 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 
 ## Data Structures
 
-<table>
-    <tr>
-        <th>Data Structure</th>
-        <th>Header</th>
-        <th>Implementation</th>
-    </tr>
-    <tr>
-        <td>Linked List</td>
-        <td><a href="./include/linked-list.h">include/linked-list.h</a></td>
-        <td><a href="./src/linked-list.tpp">src/linked-list.tpp</a></td>
-    </tr>
-</table>
+| Data Structure | Documentation                           |
+|----------------|-----------------------------------------|
+| Linked List    | [linked-list.md](./docs/linked-list.md) |
 
 ## Algorithms
 
