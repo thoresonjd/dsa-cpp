@@ -1,3 +1,10 @@
+# File: gtest.mk
+# Description: Makefile to build GoogleTest objects, which should later be
+#              linked with test code to form test program executables.
+# Author: Justin Thoreson 
+# Usage:
+# - `make [all]`: Builds gtest and gmock dependencies.
+
 # Repo config
 OBJ_DIR = ./obj
 
@@ -22,6 +29,8 @@ GTEST_OBJS = $(OBJ_DIR)/gtest_main.o $(OBJ_DIR)/gtest-all.o
 GMOCK_OBJS = $(OBJ_DIR)/gmock_main.o $(OBJ_DIR)/gmock-all.o
 
 all: $(OBJS)
+
+.PHONY: all
 
 $(OBJ_DIR)/gtest.o: $(GTEST_OBJS)
 	$(CXX) $(CXX_FLAGS) -r $^ -o $@
