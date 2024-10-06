@@ -18,9 +18,9 @@ head->| 0 | --+->| 1 | --+->| 2 | --+->null
 
 | File           | Location                                   |
 |----------------|--------------------------------------------|
-| Header         | [linked-list.h](../include/linked-list.h)  |
-| Implementation | [linked-list.tpp](../src/linked-list.tpp)  |
-| Test           | [linked-list.cpp](../test/linked-list.cpp) |
+| Header         | [singly-linked-list.h](../include/singly-linked-list.h)  |
+| Implementation | [singly-linked-list.tpp](../src/singly-linked-list.tpp)  |
+| Test           | [singly-linked-list.cpp](../test/singly-linked-list.cpp) |
 
 ## Other Linked Lists
 

@@ -1,15 +1,21 @@
+/**
+ * @file singly-linked-list.h
+ * @brief A singly linked list.
+ * @author Justin Thoreson
+ */
+
 #pragma once
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
+#ifndef SINGLY_LINKED_LIST_H
+#define SINGLY_LINKED_LIST_H
 
 #include <cstddef>
 
 /**
- * @brief A generic linked list class.
+ * @brief A generic singly linked list class.
  * @tparam ListT The type of data to store in the linked list.
  */
 template<typename ListT>
-class LinkedList {
+class SinglyLinkedList {
 private:
 
 	/**
@@ -44,19 +50,19 @@ private:
 public:
 
 	/**
-	 * @brief Construct a new Linked List object.
+	 * @brief Construct a new Singly Linked List object.
 	 */
-	LinkedList();
+	SinglyLinkedList();
 	
 	/**
-	 * @brief Destroy the Linked List object.
+	 * @brief Destroy the Singly Linked List object.
 	 */
-	~LinkedList();
+	~SinglyLinkedList();
 
-	LinkedList(const LinkedList& other) = delete;
-	LinkedList(LinkedList&& other) = delete;
-	LinkedList& operator=(const LinkedList& other) = delete;
-	LinkedList& operator=(LinkedList& other) = delete;
+	SinglyLinkedList(const SinglyLinkedList& other) = delete;
+	SinglyLinkedList(SinglyLinkedList&& other) = delete;
+	SinglyLinkedList& operator=(const SinglyLinkedList& other) = delete;
+	SinglyLinkedList& operator=(SinglyLinkedList& other) = delete;
 
 	/**
 	 * @brief Inserts data to the front of the linked list.
@@ -119,5 +125,5 @@ public:
 	bool isEmpty() const noexcept;
 };
 
-#include <linked-list.tpp>
+#include <singly-linked-list.tpp>
 #endif

@@ -19,6 +19,8 @@ The data structures and algorithms implemented in this repository are demonstrat
 
 ### Compilation
 
+Compilation can be done from the root directory of the repository.
+
 To compile an test program, run
 ```
 make <name>
@@ -32,11 +34,7 @@ make setup
 
 To compile all programs, simply run
 ```
-make
-```
-or
-```
-make all
+make [all]
 ```
 
 To remove the `obj/` and `bin/` directories, run
@@ -50,7 +48,7 @@ To run a test program, find the compiled executable in the `bin/` directory and 
 ```
 ./<name>
 ```
-From the root of the repository, programs can be executed via
+From the root directory of the repository, programs can be executed via
 ```
 ./bin/<name>
 ```
@@ -62,9 +60,9 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 
 ## Data Structures
 
-| Data Structure | Documentation                           |
-|----------------|-----------------------------------------|
-| Linked List    | [linked-list.md](./docs/linked-list.md) |
+| Data Structure        | Documentation                           |
+|-----------------------|-----------------------------------------|
+| Singly Linked List    | [linked-list.md](./docs/linked-list.md) |
 
 ## Algorithms
 
