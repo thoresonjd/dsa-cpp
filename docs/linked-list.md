@@ -6,11 +6,21 @@ A linked list is a data structure that holds data in a linear fashion. Data elem
 
 The most basic form of the linked list is the singly linked list, where each node contains a single data element and a single pointer/reference to the next node in the list. The last node in the list points to null.
 
+### Example
+
 ```
       +---+---+  +---+---+  +---+---+
 head->| 0 | --+->| 1 | --+->| 2 | --+->null
       +---+---+  +---+---+  +---+---+
 ```
+
+### Code
+
+| File           | Location                                   |
+|----------------|--------------------------------------------|
+| Header         | [linked-list.h](../include/linked-list.h)  |
+| Implementation | [linked-list.tpp](../src/linked-list.tpp)  |
+| Test           | [linked-list.cpp](../test/linked-list.cpp) |
 
 ## Other Linked Lists
 
