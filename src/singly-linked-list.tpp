@@ -8,16 +8,15 @@
 #include <stdexcept>
 
 template<typename ListT>
-SinglyLinkedList<ListT>::SinglyLinkedList(): head(nullptr), size(0) {}
-
-template<typename ListT>
 SinglyLinkedList<ListT>::~SinglyLinkedList() {
 	clear();
 }
 
 template<typename ListT>
-void SinglyLinkedList<ListT>::insertFront(const ListT value) noexcept {
-	ListNode<ListT>* node = new ListNode<ListT>;
+void SinglyLinkedList<ListT>::insertFront(const ListT value) {
+    if (size == MAX_SIZE)
+        throw std::length_error("Maximum size has been reached");
+    ListNode<ListT>* node = new ListNode<ListT>;
 	node->value = value;
 	node->next = head;
 	head = node;
@@ -25,7 +24,9 @@ void SinglyLinkedList<ListT>::insertFront(const ListT value) noexcept {
 }
 
 template<typename ListT>
-void SinglyLinkedList<ListT>::insertEnd(const ListT value) noexcept {
+void SinglyLinkedList<ListT>::insertEnd(const ListT value) {
+	if (size == MAX_SIZE)
+		throw std::length_error("Maximum size has been reached");
 	ListNode<ListT>* node = new ListNode<ListT>;
 	node->value = value;
 	node->next = nullptr;
@@ -42,7 +43,9 @@ void SinglyLinkedList<ListT>::insertEnd(const ListT value) noexcept {
 }
 
 template<typename ListT>
-void SinglyLinkedList<ListT>::insertAt(const std::size_t& index, const ListT value) {
+void SinglyLinkedList<ListT>::insertAt(const ListSizeT& index, const ListT value) {
+	if (size == MAX_SIZE)
+		throw std::length_error("Maximum size has been reached");
 	if (index > size)
 		throw std::out_of_range("Index is greater than the size");
 	if (index == 0) {
@@ -54,7 +57,7 @@ void SinglyLinkedList<ListT>::insertAt(const std::size_t& index, const ListT val
 		return;	
 	}
 	ListNode<ListT>* current = head;
-	for (std::size_t i = 0; i < index - 1; i++)
+	for (ListSizeT i = 0; i < index - 1; i++)
 		current = current->next;
 	ListNode<ListT>* node = new ListNode<ListT>;
 	node->value = value;
@@ -101,7 +104,7 @@ ListT SinglyLinkedList<ListT>::removeEnd() {
 }
 
 template<typename ListT>
-ListT SinglyLinkedList<ListT>::removeAt(const std::size_t& index) {
+ListT SinglyLinkedList<ListT>::removeAt(const ListSizeT& index) {
 	if (index >= size)
 		throw std::out_of_range("Index is greater than or equal to the size");
 	if (index == 0)
@@ -109,7 +112,7 @@ ListT SinglyLinkedList<ListT>::removeAt(const std::size_t& index) {
 	if (index == size - 1)
 		return removeEnd();
 	ListNode<ListT>* current = head;
-	for (std::size_t i = 0; i < index - 1; i++)
+	for (ListSizeT i = 0; i < index - 1; i++)
 		current = current->next;
 	ListNode<ListT>* next = current->next;
 	ListT value = next->value;
@@ -121,7 +124,7 @@ ListT SinglyLinkedList<ListT>::removeAt(const std::size_t& index) {
 }
 
 template<typename ListT>
-std::size_t SinglyLinkedList<ListT>::getSize() const noexcept {
+SinglyLinkedList<ListT>::ListSizeT SinglyLinkedList<ListT>::getSize() const noexcept {
 	return size;
 }
 

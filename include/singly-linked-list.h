@@ -8,14 +8,19 @@
 #ifndef SINGLY_LINKED_LIST_H
 #define SINGLY_LINKED_LIST_H
 
-#include <cstddef>
-
 /**
  * @brief A generic singly linked list class.
  * @tparam ListT The type of data to store in the linked list.
  */
 template<typename ListT>
 class SinglyLinkedList {
+public:
+    
+    /**
+     * @brief Variable type to track the size.
+     */
+    using ListSizeT = int;
+
 private:
 
 	/**
@@ -33,26 +38,30 @@ private:
 		/**
 		 * @brief Points to the next list node.
 		 */
-		ListNode* next;
+		ListNode* next = nullptr;
 	};
 
-	/**
-	 * @brief Points to the first node in the linked list.
-	 */
-	ListNode<ListT>* head;
+    /**
+     * @brief The maximum number of nodes allowed in the linked list.
+     */
+    static constexpr ListSizeT MAX_SIZE = 100;
 
-	/**
+    /**
 	 * @brief The number of nodes in the linked list.
 	 */
-	std::size_t size;
+	ListSizeT size = 0;
 
+    /**
+	 * @brief Points to the first node in the linked list.
+	 */
+	ListNode<ListT>* head = nullptr;
 
 public:
 
 	/**
 	 * @brief Construct a new Singly Linked List object.
 	 */
-	SinglyLinkedList();
+	SinglyLinkedList() = default;
 	
 	/**
 	 * @brief Destroy the Singly Linked List object.
@@ -62,27 +71,30 @@ public:
 	SinglyLinkedList(const SinglyLinkedList& other) = delete;
 	SinglyLinkedList(SinglyLinkedList&& other) = delete;
 	SinglyLinkedList& operator=(const SinglyLinkedList& other) = delete;
-	SinglyLinkedList& operator=(SinglyLinkedList& other) = delete;
+	SinglyLinkedList& operator=(SinglyLinkedList&& other) = delete;
 
 	/**
 	 * @brief Inserts data to the front of the linked list.
 	 * @param value The data to insert.
+     * @throw std::length_error The maximum size has been reached.
 	 */
-	void insertFront(const ListT value) noexcept;
+	void insertFront(const ListT value);
 
 	/**
 	 * @brief Inserts data to the end of the linked list.
 	 * @param value The data to insert.
+     * @throw std::length_error The maximum size has been reached.
 	 */
-	void insertEnd(const ListT value) noexcept;
+	void insertEnd(const ListT value);
 
 	/**
 	 * @brief Inserts data into the linked list at a given index. 
 	 * @param index The index in which to insert data to.
 	 * @param value The data to insert.
+     * @throw std::length_error The maximum size has been reached.
 	 * @throw std::out_of_range The index is invalid.
 	 */
-	void insertAt(const std::size_t& index, const ListT value);
+	void insertAt(const ListSizeT& index, const ListT value);
 
 	/**
 	 * @brief Removes the first node of the linked list.
@@ -104,7 +116,7 @@ public:
 	 * @return ListT The data removed from the given index of the linked list.
 	 * @throw std::out_of_range The index is invalid.
 	 */
-	ListT removeAt(const std::size_t& index);
+	ListT removeAt(const ListSizeT& index);
 
 	/**
 	 * @brief Removes all data from the linked list.
@@ -113,9 +125,9 @@ public:
 
 	/**
 	 * @brief Gets the size of the linked list.
-	 * @return std::size_t The number of nodes in the list.
+	 * @return SizeT The number of nodes in the list.
 	 */
-	std::size_t getSize() const noexcept;	
+	ListSizeT getSize() const noexcept;	
 
 	/**
 	 * @brief Determines if the linked list is empty.
@@ -126,4 +138,4 @@ public:
 };
 
 #include <singly-linked-list.tpp>
-#endif
+#endif // SINGLY_LINKED_LIST_H
