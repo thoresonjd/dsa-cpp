@@ -295,7 +295,7 @@ TEST_F(SinglyLinkedListInt, ClearExpectSizeToStillBeZeroAfterClearingAnEmptyList
 	ASSERT_EQ(list->getSize(), static_cast<SizeT>(0));
 }
 
-TEST_F(SinglyLinkedListInt, ClearExpectListToBeEmptyAfterClearing) {
+TEST_F(SinglyLinkedListInt, ClearExpectToBeEmptyAfterClearingNonEmptyList) {
 	ASSERT_TRUE(list->isEmpty());
 	for (int i = 1; i <= 10; i++)
 		ASSERT_NO_THROW(list->insertEnd(i));
@@ -304,7 +304,7 @@ TEST_F(SinglyLinkedListInt, ClearExpectListToBeEmptyAfterClearing) {
 	ASSERT_TRUE(list->isEmpty());
 }
 
-TEST_F(SinglyLinkedListInt, ClearExpectSizeZeroAfterClearing) {
+TEST_F(SinglyLinkedListInt, ClearExpectSizeToBeZeroAfterClearingNonEmptyList) {
 	ASSERT_EQ(list->getSize(), static_cast<SizeT>(0));
 	for (int i = 1; i <= 10; i++)
 		ASSERT_NO_THROW(list->insertEnd(i));

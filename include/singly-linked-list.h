@@ -59,12 +59,12 @@ private:
 public:
 
 	/**
-	 * @brief Construct a new Singly Linked List object.
+	 * @brief Constructs a new SinglyLinkedList object.
 	 */
 	SinglyLinkedList() = default;
 	
 	/**
-	 * @brief Destroy the Singly Linked List object.
+	 * @brief Destroys the SinglyLinkedList object.
 	 */
 	~SinglyLinkedList();
 
@@ -125,7 +125,7 @@ public:
 
 	/**
 	 * @brief Gets the size of the linked list.
-	 * @return SizeT The number of nodes in the list.
+	 * @return ListSizeT The number of nodes in the list.
 	 */
 	ListSizeT getSize() const noexcept;	
 
