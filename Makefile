@@ -15,7 +15,9 @@ MAKE_DIR = ./make
 MAKE_EXT = mk
 
 # Files
-PROGRAMS = singly-linked-list stack
+PROGRAMS = \
+	singly-linked-list \
+	stack
 
 all: $(PROGRAMS)
 
@@ -29,6 +31,3 @@ clean:
 
 $(PROGRAMS): setup
 	make -f $(MAKE_DIR)/$@.$(MAKE_EXT)
-
-singly-linked-list:
-stack:
