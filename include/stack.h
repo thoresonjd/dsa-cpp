@@ -94,7 +94,7 @@ public:
     /**
      * @brief Gets the data at the top of the stack.
      * @return StackT The data at the top of the stack.
-     * @throw std::out_of_range The Stack is empty.
+     * @throw std::out_of_range The stack is empty.
      */
     StackT peek() const;
 

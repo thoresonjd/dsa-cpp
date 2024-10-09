@@ -14,33 +14,34 @@ The primary operations of a stack are:
 ```
 Operations:
 
-    push 1  push 2  push 3   pop     pop     pop
-
- top     top     top     top     top     top     top
-  |       |       |       |       |       |       |
-  V       V       V       V       V       V       V
- null   +---+   +---+   +---+   +---+   +---+    null
-        | 1 |   | 2 |   | 3 |   | 2 |   | 1 | 
-        +---+   +---+   +---+   +---+   +---+
-          |       |       |       |       |
-          V       V       V       V       V
-         null   +---+   +---+   +---+    null
-                | 1 |   | 2 |   | 1 |
-                +---+   +---+   +---+
-                  |       |       |
-                  V       V       V
-                 null   +---+    null
-                        | 1 |  
-                        +---+  
-                          |
-                          V
-                         null  
+Operation |    push 1  push 2  push 3   pop     pop     pop
+----------+-----------------------------------------------------
+   Visual |
+          | top     top     top     top     top     top     top
+          |  |       |       |       |       |       |       |
+          |  V       V       V       V       V       V       V
+          | null   +---+   +---+   +---+   +---+   +---+    null
+          |        | 1 |   | 2 |   | 3 |   | 2 |   | 1 | 
+          |        +---+   +---+   +---+   +---+   +---+
+          |          |       |       |       |       |
+          |          V       V       V       V       V
+          |         null   +---+   +---+   +---+    null
+          |                | 1 |   | 2 |   | 1 |
+          |                +---+   +---+   +---+
+          |                  |       |       |
+          |                  V       V       V
+          |                 null   +---+    null
+          |                        | 1 |  
+          |                        +---+  
+          |                          |
+          |                          V
+          |                         null  
 ```
 
 ## Code
 
-| File           | Location                                   |
-|----------------|--------------------------------------------|
+| File           | Location                       |
+|----------------|--------------------------------|
 | Header         | [stack.h](../include/stack.h)  |
 | Implementation | [stack.tpp](../src/stack.tpp)  |
 | Test           | [stack.cpp](../test/stack.cpp) |

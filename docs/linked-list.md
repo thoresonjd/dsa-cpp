@@ -16,8 +16,8 @@ head->| 0 | --+->| 1 | --+->| 2 | --+->null
 
 ### Code
 
-| File           | Location                                   |
-|----------------|--------------------------------------------|
+| File           | Location                                                 |
+|----------------|----------------------------------------------------------|
 | Header         | [singly-linked-list.h](../include/singly-linked-list.h)  |
 | Implementation | [singly-linked-list.tpp](../src/singly-linked-list.tpp)  |
 | Test           | [singly-linked-list.cpp](../test/singly-linked-list.cpp) |
