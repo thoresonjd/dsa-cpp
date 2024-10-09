@@ -16,6 +16,7 @@ MAKE_EXT = mk
 
 # Files
 PROGRAMS = \
+	queue \
 	singly-linked-list \
 	stack
 

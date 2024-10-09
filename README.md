@@ -62,8 +62,9 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 
 | Data Structure        | Documentation                           |
 |-----------------------|-----------------------------------------|
+| Queue                 | [queue.md](./docs/queue.md)             |
 | Singly Linked List    | [linked-list.md](./docs/linked-list.md) |
-| Stack                 | [stack.md](./docs/stack.md)                |
+| Stack                 | [stack.md](./docs/stack.md)             |
 
 ## Algorithms
 
