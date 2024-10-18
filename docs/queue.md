@@ -44,14 +44,14 @@ Enqueue 3 |                              |
   Dequeue |                     |
           |                     V 
           |          +---+    +---+
-          | front -> | 1 | -> | 2 | -> null
+          | front -> | 2 | -> | 3 | -> null
           |          +---+    +---+
 
           |           rear
   Dequeue |            |
           |            V  
           |          +---+
-          | front -> | 1 | -> null
+          | front -> | 3 | -> null
           |          +---+
           |
           |          rear
