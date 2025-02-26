@@ -17,6 +17,8 @@ Implementing various data structures and algorithms in C++ just for fun.
 
 The data structures and algorithms implemented in this repository are demonstrated through test programs. This repository utilizes the [GoogleTest](https://github.com/google/googletest) framework to perform unit testing on the data structures and algorithms.
 
+This codebase was written in a Linux environment.
+
 ### Compilation
 
 Compilation can be done from the root directory of the repository.
@@ -60,11 +62,12 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 
 ## Data Structures
 
-| Data Structure        | Documentation                           |
-|-----------------------|-----------------------------------------|
-| Queue                 | [queue.md](./docs/queue.md)             |
-| Singly Linked List    | [linked-list.md](./docs/linked-list.md) |
-| Stack                 | [stack.md](./docs/stack.md)             |
+| Data Structure     | Documentation                                         |
+|--------------------|-------------------------------------------------------|
+| Binary Search Tree | [binary-search-tree.md](./docs/binary-search-tree.md) |
+| Queue              | [queue.md](./docs/queue.md)                           |
+| Singly Linked List | [linked-list.md](./docs/linked-list.md)               |
+| Stack              | [stack.md](./docs/stack.md)                           |
 
 ## Algorithms
 

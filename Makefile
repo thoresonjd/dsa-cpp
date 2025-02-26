@@ -4,8 +4,8 @@
 # Usage:
 # - `make [all]`: Sets up the build directories and compiles all programs
 # - `make <program>`: Compiles the specified program by calling its designated Makefile
-# - `make setup`: Sets up the build directories
-# - `make clean`: Removes the build directories
+# - `make setup`: Sets up the build directories (/obj and /bin)
+# - `make clean`: Removes all object files and compiled binaries
 
 # Repo config
 OBJ_DIR = ./obj
@@ -16,6 +16,7 @@ MAKE_EXT = mk
 
 # Files
 PROGRAMS = \
+	binary-search-tree \
 	queue \
 	singly-linked-list \
 	stack
