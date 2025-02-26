@@ -1,3 +1,9 @@
+/**
+ * @file binary-search-tree.tpp
+ * @brief A binary search tree (BST).
+ * @author Justin Thoreson
+ */
+
 #include <binary-search-tree.hpp>
 
 template<typename TreeT>

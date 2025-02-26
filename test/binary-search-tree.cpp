@@ -1,3 +1,9 @@
+/**
+ * @file binary-search-tree.cpp
+ * @brief Tests for a binary search tree.
+ * @author Justin Thoreson
+ */
+
 #include <gtest/gtest.h>
 #include <binary-search-tree.hpp>
 
