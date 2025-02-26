@@ -5,7 +5,7 @@
  */
 
 #include <gtest/gtest.h>
-#include <stack.h>
+#include <stack.hpp>
 
 /**
  * @brief Test fixture for a stack of floats.

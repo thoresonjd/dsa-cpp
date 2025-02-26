@@ -16,11 +16,11 @@ head->| 0 | --+->| 1 | --+->| 2 | --+->null
 
 ### Code
 
-| File           | Location                                                 |
-|----------------|----------------------------------------------------------|
-| Header         | [singly-linked-list.h](../include/singly-linked-list.h)  |
-| Implementation | [singly-linked-list.tpp](../src/singly-linked-list.tpp)  |
-| Test           | [singly-linked-list.cpp](../test/singly-linked-list.cpp) |
+| File           | Location                                                    |
+|----------------|-------------------------------------------------------------|
+| Header         | [singly-linked-list.hpp](../include/singly-linked-list.hpp) |
+| Implementation | [singly-linked-list.tpp](../src/singly-linked-list.tpp)     |
+| Test           | [singly-linked-list.cpp](../test/singly-linked-list.cpp)    |
 
 ## Other Linked Lists
 

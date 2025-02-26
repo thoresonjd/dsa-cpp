@@ -1,12 +1,12 @@
 /**
- * @file binary-search-tree.h
+ * @file binary-search-tree.hpp
  * @brief A binary search tree (BST).
  * @author Justin Thoreson
  */
 
 #pragma once
-#ifndef BINARY_SEARCH_TREE_H
-#define BINARY_SEARCH_TREE_H
+#ifndef BINARY_SEARCH_TREE_HPP
+#define BINARY_SEARCH_TREE_HPP
 
 #include <string>
 #include <sstream>
@@ -228,4 +228,4 @@ public:
 };
 
 #include <binary-search-tree.tpp>
-#endif // BINARY_SEARCH_TREE_H
+#endif // BINARY_SEARCH_TREE_HPP

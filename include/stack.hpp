@@ -1,12 +1,12 @@
 /**
- * @file stack.h
+ * @file stack.hpp
  * @brief A stack.
  * @author Justin Thoreson
  */
 
 #pragma once
-#ifndef STACK_H
-#define STACK_H
+#ifndef STACK_HPP
+#define STACK_HPP
 
 /**
  * @brief A generic stack class.
@@ -113,4 +113,4 @@ public:
 };
 
 #include <stack.tpp>
-#endif // STACK_H
+#endif // STACK_HPP

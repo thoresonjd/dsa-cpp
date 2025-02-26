@@ -1,12 +1,12 @@
 /**
- * @file queue.h
+ * @file queue.hpp
  * @brief A queue.
  * @author Justin Thoreson
  */
 
 #pragma once
-#ifndef QUEUE_H
-#define QUEUE_H
+#ifndef QUEUE_HPP
+#define QUEUE_HPP
 
 /**
  * @brief A generic queue class.
@@ -119,4 +119,4 @@ public:
 };
 
 #include <queue.tpp>
-#endif // QUEUE_H
+#endif // QUEUE_HPP

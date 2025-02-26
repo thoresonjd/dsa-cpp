@@ -5,7 +5,7 @@
  */
 
 #include <gtest/gtest.h>
-#include <queue.h>
+#include <queue.hpp>
 
 /**
  * @brief Test fixture for a queue of characters.

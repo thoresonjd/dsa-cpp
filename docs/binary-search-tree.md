@@ -54,8 +54,8 @@ When running each of the traversal algorithms, we get the following results
 
 ## Code
 
-| File           | Location                                                 |
-|----------------|----------------------------------------------------------|
-| Header         | [binary-search-tree.h](../include/binary-search-tree.h)  |
-| Implementation | [binary-search-tree.tpp](../src/binary-search-tree.tpp)  |
-| Test           | [binary-search-tree.cpp](../test/binary-search-tree.cpp) |
+| File           | Location                                                    |
+|----------------|-------------------------------------------------------------|
+| Header         | [binary-search-tree.hpp](../include/binary-search-tree.hpp) |
+| Implementation | [binary-search-tree.tpp](../src/binary-search-tree.tpp)     |
+| Test           | [binary-search-tree.cpp](../test/binary-search-tree.cpp)    |

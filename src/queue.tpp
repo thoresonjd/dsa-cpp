@@ -4,7 +4,7 @@
  * @author Justin Thoreson
  */
 
-#include <queue.h>
+#include <queue.hpp>
 #include <stdexcept>
 
 template<typename QueueT>

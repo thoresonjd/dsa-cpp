@@ -62,8 +62,8 @@ Enqueue 3 |                              |
 
 ## Code
 
-| File           | Location                       |
-|----------------|--------------------------------|
-| Header         | [queue.h](../include/queue.h)  |
-| Implementation | [queue.tpp](../src/queue.tpp)  |
-| Test           | [queue.cpp](../test/queue.cpp) |
+| File           | Location                          |
+|----------------|-----------------------------------|
+| Header         | [queue.hpp](../include/queue.hpp) |
+| Implementation | [queue.tpp](../src/queue.tpp)     |
+| Test           | [queue.cpp](../test/queue.cpp)    |

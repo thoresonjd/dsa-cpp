@@ -40,8 +40,8 @@ Operation |    push 1  push 2  push 3   pop     pop     pop
 
 ## Code
 
-| File           | Location                       |
-|----------------|--------------------------------|
-| Header         | [stack.h](../include/stack.h)  |
-| Implementation | [stack.tpp](../src/stack.tpp)  |
-| Test           | [stack.cpp](../test/stack.cpp) |
+| File           | Location                          |
+|----------------|-----------------------------------|
+| Header         | [stack.hpp](../include/stack.hpp) |
+| Implementation | [stack.tpp](../src/stack.tpp)     |
+| Test           | [stack.cpp](../test/stack.cpp)    |

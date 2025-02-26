@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <binary-search-tree.h>
+#include <binary-search-tree.hpp>
 
 class BstInt : public testing::Test {
 protected:

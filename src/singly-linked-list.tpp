@@ -4,7 +4,7 @@
  * @author Justin Thoreson
  */
 
-#include <singly-linked-list.h>
+#include <singly-linked-list.hpp>
 #include <stdexcept>
 
 template<typename ListT>

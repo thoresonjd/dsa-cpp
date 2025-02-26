@@ -1,12 +1,12 @@
 /**
- * @file singly-linked-list.h
+ * @file singly-linked-list.hpp
  * @brief A singly linked list.
  * @author Justin Thoreson
  */
 
 #pragma once
-#ifndef SINGLY_LINKED_LIST_H
-#define SINGLY_LINKED_LIST_H
+#ifndef SINGLY_LINKED_LIST_HPP
+#define SINGLY_LINKED_LIST_HPP
 
 /**
  * @brief A generic singly linked list class.
@@ -138,4 +138,4 @@ public:
 };
 
 #include <singly-linked-list.tpp>
-#endif // SINGLY_LINKED_LIST_H
+#endif // SINGLY_LINKED_LIST_HPP

@@ -4,7 +4,7 @@
  * @author Justin Thoreson
  */
 
-#include <stack.h>
+#include <stack.hpp>
 #include <stdexcept>
 
 template<typename StackT>

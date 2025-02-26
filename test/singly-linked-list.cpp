@@ -5,7 +5,7 @@
  */
 
 #include <gtest/gtest.h>
-#include <singly-linked-list.h>
+#include <singly-linked-list.hpp>
 
 /**
  * @brief Test fixture for a linked list of integers.

@@ -1,4 +1,4 @@
-#include <binary-search-tree.h>
+#include <binary-search-tree.hpp>
 
 template<typename TreeT>
 template<typename NodeT>
