@@ -57,7 +57,12 @@ From the root directory of the repository, programs can be executed via
 
 Valgrind is used to check for memory leaks.
 ```
-valgrind --leak-check=full --show-leak-kinds=all ./<name>
+valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./<name>
+```
+
+The [`Makefile`](./Makefile) has a rule equivalent to the above command that allows Valgrind to run with any of the test programs (assuming they are already compiled)
+```
+make vg-<name>
 ```
 
 ## Data Structures
