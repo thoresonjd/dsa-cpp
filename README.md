@@ -65,6 +65,7 @@ valgrind --leak-check=full --show-leak-kinds=all ./<name>
 | Data Structure     | Documentation                                         |
 |--------------------|-------------------------------------------------------|
 | Binary Search Tree | [binary-search-tree.md](./docs/binary-search-tree.md) |
+| Circular Queue     | [circular-queue.md](./docs/circular-queue.md)         |
 | Queue              | [queue.md](./docs/queue.md)                           |
 | Singly Linked List | [linked-list.md](./docs/linked-list.md)               |
 | Stack              | [stack.md](./docs/stack.md)                           |
