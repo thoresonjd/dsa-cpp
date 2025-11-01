@@ -2,6 +2,22 @@
 
 Implementing various data structures and algorithms in C++ just for fun.
 
+## Data Structures
+
+| Data Structure     | Documentation                                         |
+|--------------------|-------------------------------------------------------|
+| Binary Search Tree | [binary-search-tree.md](./docs/binary-search-tree.md) |
+| Circular Queue     | [circular-queue.md](./docs/circular-queue.md)         |
+| Queue              | [queue.md](./docs/queue.md)                           |
+| Singly Linked List | [linked-list.md](./docs/linked-list.md)               |
+| Stack              | [stack.md](./docs/stack.md)                           |
+
+## Algorithms
+
+| Algorithm   | Documentation                           |
+|-------------|-----------------------------------------|
+| Bubble Sort | [bubble-sort.md](./docs/bubble-sort.md) |
+
 ## Repository Structure
 
 - `bin` - Contains compiled executables (excluded from repository)
@@ -65,18 +81,3 @@ The [`Makefile`](./Makefile) has a rule equivalent to the above command that all
 make vg-<name>
 ```
 
-## Data Structures
-
-| Data Structure     | Documentation                                         |
-|--------------------|-------------------------------------------------------|
-| Binary Search Tree | [binary-search-tree.md](./docs/binary-search-tree.md) |
-| Circular Queue     | [circular-queue.md](./docs/circular-queue.md)         |
-| Queue              | [queue.md](./docs/queue.md)                           |
-| Singly Linked List | [linked-list.md](./docs/linked-list.md)               |
-| Stack              | [stack.md](./docs/stack.md)                           |
-
-## Algorithms
-
-| Algorithm   | Documentation                           |
-|-------------|-----------------------------------------|
-| Bubble Sort | [bubble-sort.md](./docs/bubble-sort.md) |
