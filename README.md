@@ -77,4 +77,6 @@ make vg-<name>
 
 ## Algorithms
 
-TODO
+| Algorithm   | Documentation                           |
+|-------------|-----------------------------------------|
+| Bubble Sort | [bubble-sort.md](./docs/bubble-sort.md) |

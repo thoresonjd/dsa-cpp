@@ -22,6 +22,7 @@ VG_FLAGS = --leak-check=full --show-leak-kinds=all --track-fds=yes
 # Files
 PROGRAMS = \
 	binary-search-tree \
+	bubble-sort \
 	circular-queue \
 	queue \
 	singly-linked-list \
