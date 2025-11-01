@@ -20,6 +20,8 @@ Implementing various data structures and algorithms in C++ just for fun.
 
 ## Repository Structure
 
+The repository is arranged into the following directories
+
 - `bin` - Contains compiled executables (excluded from repository)
 - `docs` - Contains documentation for the data structures and algorithms
 - `external` - Contains external, third-party submodules
@@ -28,6 +30,8 @@ Implementing various data structures and algorithms in C++ just for fun.
 - `obj` - Contains intermediate object files (excluded from repository)
 - `src` - Contains implementation files for the data structures and algorithms and other utilities
 - `test` - Contains unit tests that demonstrate the data structures and algorithms
+
+Implementation files within `src` may have the `.tpp` file extension. The `.tpp` extension indicates that the file is an implementation of a templated entity. Template implementations are still kept separate from their headers to follow the typical convention of non-templated implementations. However, since templates cannot be compiled into their own translation units, as templates are not concrete types, these `.tpp` implementation files are included at the bottom of their respective header files in `include`.
 
 ## Usage
 
