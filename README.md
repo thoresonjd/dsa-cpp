@@ -18,6 +18,7 @@ Implementing various data structures and algorithms in C++ just for fun.
 |----------------|-----------------------------------------------|
 | Bubble Sort    | [bubble-sort.md](./docs/bubble-sort.md)       |
 | Insertion Sort | [insertion-sort.md](./docs/insertion-sort.md) |
+| Selection Sort | [selection-sort.md](./docs/selection-sort.md) |
 
 ## Repository Structure
 

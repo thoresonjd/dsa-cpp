@@ -26,6 +26,7 @@ PROGRAMS = \
 	circular-queue \
 	insertion-sort \
 	queue \
+	selection-sort \
 	singly-linked-list \
 	stack
 
