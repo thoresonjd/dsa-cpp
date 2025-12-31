@@ -2,7 +2,7 @@
 # Description: Makefile to build the bubble sort test program.
 # Author: Justin Thoreson
 # Usage:
-# - `make [bubble-sort]`: Builds the singly linked list test program.
+# - `make [bubble-sort]`: Builds the bubble sort test program.
 
 # Repo config
 INCLUDE_DIR = ./include

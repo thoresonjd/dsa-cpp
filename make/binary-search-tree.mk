@@ -2,7 +2,7 @@
 # Description: Makefile to build the binary search tree test program.
 # Author: Justin Thoreson
 # Usage:
-# - `make [binary-search-tree]`: Builds the stack test program.
+# - `make [binary-search-tree]`: Builds the binary search tree test program.
 
 # Repo config
 INCLUDE_DIR = ./include
