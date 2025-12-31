@@ -24,6 +24,7 @@ PROGRAMS = \
 	binary-search-tree \
 	bubble-sort \
 	circular-queue \
+	insertion-sort \
 	queue \
 	singly-linked-list \
 	stack
