@@ -8,6 +8,8 @@
 #ifndef CIRCULAR_QUEUE_HPP
 #define CIRCULAR_QUEUE_HPP
 
+namespace dsa {
+
 /**
  * @brief A generic circular queue class.
  * @tparam QueueT The type of data to store in the circular queue.
@@ -117,6 +119,8 @@ public:
 	 */
 	bool isFull() const noexcept;
 };
+
+} // dsa
 
 #include <circular-queue.tpp>
 #endif // CIRCULAR_QUEUE_HPP

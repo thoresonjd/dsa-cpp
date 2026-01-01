@@ -7,6 +7,8 @@
 #include <stack.hpp>
 #include <stdexcept>
 
+namespace dsa {
+
 template<typename StackT>
 Stack<StackT>::~Stack() {
     clear();
@@ -59,3 +61,5 @@ template<typename StackT>
 bool Stack<StackT>::isEmpty() const noexcept {
     return !top;
 }
+
+} // dsa

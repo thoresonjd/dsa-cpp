@@ -8,6 +8,8 @@
 #ifndef SELECTION_SORT_HPP
 #define SELECTION_SORT_HPP
 
+namespace dsa {
+
 /**
  * @brief Sorts an array via the selection sort algorithm.
  * @param[in,out] array An array to sort.
@@ -15,6 +17,8 @@
  */
 template<typename T>
 void selectionSort(T array[], const std::size_t& size) noexcept;
+
+} // dsa
 
 #include <selection-sort.tpp>
 #endif // SELECTION_SORT_HPP

@@ -6,6 +6,8 @@
 
 #include <selection-sort.hpp>
 
+namespace dsa {
+
 template<typename T>
 void selectionSort(T array[], const std::size_t& size) noexcept {
 	for (std::size_t i = 0; i < size - 1; i++) {
@@ -22,3 +24,4 @@ void selectionSort(T array[], const std::size_t& size) noexcept {
 	}
 }
 
+} // dsa

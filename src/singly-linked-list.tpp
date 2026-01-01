@@ -7,6 +7,8 @@
 #include <singly-linked-list.hpp>
 #include <stdexcept>
 
+namespace dsa {
+
 template<typename ListT>
 SinglyLinkedList<ListT>::~SinglyLinkedList() {
 	clear();
@@ -143,3 +145,5 @@ void SinglyLinkedList<ListT>::clear() noexcept {
 	}
 	size = 0;
 }
+
+} // dsa

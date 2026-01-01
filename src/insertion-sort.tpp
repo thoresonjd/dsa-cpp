@@ -6,6 +6,8 @@
 
 #include <insertion-sort.hpp>
 
+namespace dsa {
+
 template<typename T>
 void insertionSort(T array[], const std::size_t& size) noexcept {
 	for (std::size_t i = 1; i < size; i++) {
@@ -19,3 +21,4 @@ void insertionSort(T array[], const std::size_t& size) noexcept {
 	}	
 }
 
+} // dsa

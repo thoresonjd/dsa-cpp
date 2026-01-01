@@ -7,6 +7,8 @@
 #include <queue.hpp>
 #include <stdexcept>
 
+namespace dsa {
+
 template<typename QueueT>
 Queue<QueueT>::~Queue() {
 	clear();
@@ -68,3 +70,4 @@ bool Queue<QueueT>::isEmpty() const noexcept {
 	return !front;
 }
 
+} // dsa

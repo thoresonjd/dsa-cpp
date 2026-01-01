@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <stack.hpp>
 
+using dsa::Stack;
+
 /**
  * @brief Test fixture for a stack of floats.
  */

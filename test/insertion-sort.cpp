@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <insertion-sort.hpp>
 
+using dsa::insertionSort;
+
 TEST(InsertionSort, SortNonDescendingSortedArray) {
 	std::size_t arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	std::size_t size = sizeof(arr) / sizeof(arr[0]);

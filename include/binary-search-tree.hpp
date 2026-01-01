@@ -11,6 +11,8 @@
 #include <string>
 #include <sstream>
 
+namespace dsa {
+
 /**
  * @brief A generic binary search tree (BST) class.
  * @tparam TreeT The type of data to store in the BST
@@ -226,6 +228,8 @@ public:
 	 */	
 	std::string toStringPostorder() const noexcept;
 };
+
+} // dsa
 
 #include <binary-search-tree.tpp>
 #endif // BINARY_SEARCH_TREE_HPP

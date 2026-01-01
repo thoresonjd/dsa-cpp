@@ -8,6 +8,8 @@
 #ifndef INSERTION_SORT_HPP
 #define INSERTION_SORT_HPP
 
+namespace dsa {
+
 /**
  * @brief Sorts an array via the insertion sort algorithm.
  * @param[in,out] array An array to sort.
@@ -15,6 +17,8 @@
  */
 template<typename T>
 void insertionSort(T array[], const std::size_t& size) noexcept;
+
+} // dsa
 
 #include <insertion-sort.tpp>
 #endif // INSERTION_SORT_HPP

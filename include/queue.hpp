@@ -8,6 +8,8 @@
 #ifndef QUEUE_HPP
 #define QUEUE_HPP
 
+namespace dsa {
+
 /**
  * @brief A generic queue class.
  * @tparam QueueT The type of data to store in the queue.
@@ -117,6 +119,8 @@ public:
 	bool isEmpty() const noexcept;
 
 };
+
+} // dsa
 
 #include <queue.tpp>
 #endif // QUEUE_HPP

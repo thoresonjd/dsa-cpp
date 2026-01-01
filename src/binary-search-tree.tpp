@@ -6,6 +6,8 @@
 
 #include <binary-search-tree.hpp>
 
+namespace dsa {
+
 template<typename TreeT>
 template<typename NodeT>
 BinarySearchTree<TreeT>::TreeNode<NodeT>::TreeNode(const NodeT& value) noexcept
@@ -188,3 +190,4 @@ std::string BinarySearchTree<TreeT>::toStringPostorder() const noexcept {
 	return ss.str();
 }
 
+} // dsa

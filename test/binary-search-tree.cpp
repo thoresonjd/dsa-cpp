@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <binary-search-tree.hpp>
 
+using dsa::BinarySearchTree;
+
 class BstInt : public testing::Test {
 protected:
 	using SizeT = BinarySearchTree<int>::TreeSizeT;

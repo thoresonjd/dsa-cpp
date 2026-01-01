@@ -8,6 +8,8 @@
 #ifndef STACK_HPP
 #define STACK_HPP
 
+namespace dsa {
+
 /**
  * @brief A generic stack class.
  * @tparam StackT The type of data to store in the stack.
@@ -111,6 +113,8 @@ public:
      */
     bool isEmpty() const noexcept;
 };
+
+} // dsa
 
 #include <stack.tpp>
 #endif // STACK_HPP

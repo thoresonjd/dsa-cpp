@@ -8,6 +8,8 @@
 #ifndef BUBBLE_SORT_HPP
 #define BUBBLE_SORT_HPP
 
+namespace dsa {
+
 /**
  * @brief Sorts an array via the bubble sort algorithm.
  * @param[in,out] array An array to sort.
@@ -15,6 +17,8 @@
  */
 template<typename T>
 void bubbleSort(T array[], const std::size_t& size) noexcept;
+
+} // dsa
 
 #include <bubble-sort.tpp>
 #endif // BUBBLE_SORT_HPP

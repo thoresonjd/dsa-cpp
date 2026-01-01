@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <queue.hpp>
 
+using dsa::Queue;
+
 /**
  * @brief Test fixture for a queue of characters.
  */

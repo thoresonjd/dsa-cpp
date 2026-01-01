@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <circular-queue.hpp>
 
+using dsa::CircularQueue;
+
 /**
  * @brief Test fixture for a circular queue of integers.
  */

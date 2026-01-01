@@ -4,6 +4,8 @@
  * @author Justin Thoreson
  */
 
+namespace dsa {
+
 #pragma once
 #ifndef SINGLY_LINKED_LIST_HPP
 #define SINGLY_LINKED_LIST_HPP
@@ -136,6 +138,8 @@ public:
 	 */
 	bool isEmpty() const noexcept;
 };
+
+} // dsa
 
 #include <singly-linked-list.tpp>
 #endif // SINGLY_LINKED_LIST_HPP

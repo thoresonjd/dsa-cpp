@@ -7,6 +7,8 @@
 #include <circular-queue.hpp>
 #include <exception>
 
+namespace dsa {
+
 template <typename QueueT>
 CircularQueue<QueueT>::CircularQueue(const QueueSizeT& capacity) {
 	if (capacity < MIN_CAPACITY)
@@ -61,3 +63,5 @@ template <typename QueueT>
 bool CircularQueue<QueueT>::isFull() const noexcept {
 	return size == capacity;
 }
+
+} // dsa

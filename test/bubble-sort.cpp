@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <bubble-sort.hpp>
 
+using dsa::bubbleSort;
+
 TEST(BubbleSort, SortNonDescendingSortedArray) {
 	std::size_t arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	std::size_t size = sizeof(arr) / sizeof(arr[0]);

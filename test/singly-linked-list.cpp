@@ -7,6 +7,8 @@
 #include <gtest/gtest.h>
 #include <singly-linked-list.hpp>
 
+using dsa::SinglyLinkedList;
+
 /**
  * @brief Test fixture for a linked list of integers.
  */
