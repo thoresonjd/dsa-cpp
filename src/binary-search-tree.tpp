@@ -8,11 +8,16 @@
 
 template<typename TreeT>
 template<typename NodeT>
-BinarySearchTree<TreeT>::TreeNode<NodeT>::TreeNode(const NodeT& value): value(value), left(nullptr), right(nullptr) {}
+BinarySearchTree<TreeT>::TreeNode<NodeT>::TreeNode(const NodeT& value) noexcept
+	: value(value), left(nullptr), right(nullptr) {}
 
 template<typename TreeT>
 template<typename NodeT>
-BinarySearchTree<TreeT>::TreeNode<NodeT>::TreeNode(const NodeT& value, const TreeNode<NodeT>* left, const TreeNode<NodeT>* right): value(value), left(left), right(right) {}
+BinarySearchTree<TreeT>::TreeNode<NodeT>::TreeNode(
+	const NodeT& value,
+	const TreeNode<NodeT>* left,
+	const TreeNode<NodeT>* right) noexcept
+	: value(value), left(left), right(right) {}
 
 template<typename TreeT>
 BinarySearchTree<TreeT>::~BinarySearchTree() {

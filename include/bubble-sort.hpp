@@ -14,7 +14,7 @@
  * @param[in] size The number of elements in the array.
  */
 template<typename T>
-void bubbleSort(T array[], const std::size_t& size);
+void bubbleSort(T array[], const std::size_t& size) noexcept;
 
 #include <bubble-sort.tpp>
 #endif // BUBBLE_SORT_HPP

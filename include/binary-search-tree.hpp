@@ -52,7 +52,7 @@ private:
 		 * @brief Initializes a new tree node.
 		 * @param value The value to store in the tree node.
 		 */
-		explicit TreeNode(const NodeT& value);
+		explicit TreeNode(const NodeT& value) noexcept;
 
 		/**
 		 * @brief Initializes a new tree node.
@@ -60,7 +60,7 @@ private:
 		 * @param left The address of the left child node.
 		 * @param right The address of the right child node.
 		 */
-		TreeNode(const NodeT& value, const TreeNode<NodeT>* left, const TreeNode<NodeT>* right);
+		TreeNode(const NodeT& value, const TreeNode<NodeT>* left, const TreeNode<NodeT>* right) noexcept;
 	};
 
 	/**

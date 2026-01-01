@@ -7,7 +7,7 @@
 #include <bubble-sort.hpp>
 
 template<typename T>
-void bubbleSort(T array[], const std::size_t& size) {
+void bubbleSort(T array[], const std::size_t& size) noexcept {
 	for (std::size_t i = 0; i < size - 1; i++) {
 		for (std::size_t j = 0; j < size - i - 1; j++) {
 			if (array[j] > array[j + 1]) {

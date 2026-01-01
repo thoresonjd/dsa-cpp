@@ -14,7 +14,7 @@
  * @param[in] size The number of elements in the array.
  */
 template<typename T>
-void selectionSort(T array[], const std::size_t& size);
+void selectionSort(T array[], const std::size_t& size) noexcept;
 
 #include <selection-sort.tpp>
 #endif // SELECTION_SORT_HPP

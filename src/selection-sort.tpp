@@ -7,7 +7,7 @@
 #include <selection-sort.hpp>
 
 template<typename T>
-void selectionSort(T array[], const std::size_t& size) {
+void selectionSort(T array[], const std::size_t& size) noexcept {
 	for (std::size_t i = 0; i < size - 1; i++) {
 		std::size_t min = i;
 		for (std::size_t j = i + 1; j < size; j++) {
