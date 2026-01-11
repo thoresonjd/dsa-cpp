@@ -14,6 +14,7 @@ OUT_DIR = ./bin
 BUILD_DIRS = $(OBJ_DIR) $(OUT_DIR)
 MAKE_DIR = ./make
 MAKE_EXT = mk
+SCRIPT_DIR = ./scripts
 
 # Valgrind
 VG = valgrind
@@ -39,7 +40,10 @@ setup:
 clean:
 	rm -rf $(BUILD_DIRS)
 
-.PHONY: all setup clean
+run-all: all
+	$(SCRIPT_DIR)/run-all.sh
+
+.PHONY: all setup clean run-all
 
 $(PROGRAMS): setup
 	make -f $(MAKE_DIR)/$@.$(MAKE_EXT)
